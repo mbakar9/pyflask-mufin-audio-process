@@ -1,0 +1,103 @@
+{% extends 'base.html' %} {% block title %}Raw Form Example{% endblock %} {% block content %}
+
+<script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+/>
+<link rel="stylesheet" href="/static/css/style.css">
+
+<div class="content">
+
+    <h1>BU ŞARKININ TÜRÜ<br><span>UNKNOWN</span></h1>
+
+    <div class="chart-container">
+        <canvas id="chart"></canvas>
+    </div>
+
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="row player-background">
+            <div class="col-md-1">
+                <div class="circle pause"></div>
+            </div>
+            <div class="wrap">
+
+                <div class="player paused">
+                    <div class="album-art">
+                        <div class="cover"></div>
+                    </div>
+
+                    <div class="description">
+                        <div class="title">Dinlemek için tıkla!</div>
+                        <div class="sub-title">Mufin</div>
+                    </div>
+
+                    <div class="visualizer">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="play-button">
+                        <div class="lp-background"></div>
+                        <i class="fa fa-play" style="color:green"></i>
+                        <i class="fa fa-pause"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <a href="/">Lütfen başka bir şarkının analizini istiyorsanız buraya tıklayın.</a>
+    <a href="https://www.kaggle.com/datasets/andradaolteanu/gtzan-dataset-music-genre-classification">powered by GTZAN</a>
+    <a href="https://www.instagram.com/mbakar9">created by Mustafa Bakar</a>
+
+    <script src="/static/js/chart.js"></script>
+    <script src="/static/js/music_player.js"></script>
+
+</div>
+
+{% endblock %}
